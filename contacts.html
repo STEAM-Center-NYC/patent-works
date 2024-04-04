@@ -7,36 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="bootstrap.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+        var wow = new WOW({
+            boxClass:     'wow',
+            animateClass: 'animate__animated'
+        })
+        wow.init();
+</script>
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
-    <div class="bg-dark p-5 w-50">
+    <div class="p-5 container wow animate__slideInDown ">
         <div class="bg-primary position-relative m">
 
-            <h1 class="p-3">Contact Us</h1>
+            <h1 class="p-3 wow animate__bounceInLeft">Contact Us</h1>
 
-            <div class="m-5">
-                <label for="exampleFormControlInput1" class="form-label">Email address:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <form
+            action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+            method="post" 
+           >   
+
+            <div class="m-5 wow wow animate__fadeIn">
+                <label for="emailF" class="form-label">From:</label>
+                <input type="email" class="form-control" id="emailF" name="emailF" placeholder="name@example.com">
               </div>
 
-              <div class="m-5">
-                <label for="exampleFormControlInput1" class="form-label">To:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <div class="m-5 wow animate__fadeIn">
+                <label for="emailT" class="form-label">To:</label>
+                <input type="email" class="form-control" id="emailT" name="emailT" placeholder="name@example.com">
               </div>
 
-              <div class="m-5">
-                <label for="exampleFormControlInput1" class="form-label">Subject:</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Greeting">
+              <div class="m-5 wow animate__fadeIn">
+                <label for="subject" class="form-label">Subject:</label>
+                <input type="text" class="form-control" id="Subject" name="subject" placeholder="Topic">
               </div>
 
-
-              <div class="mb-3 p-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <div class="mb-3 pb-5  m-5 wow animate__fadeIn">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
               </div>
-
-            </div>
+              <div class="d-grid gap-2 col-6 mx-auto  pb-5 ">
+                <button type="submit" class="btn btn-outline-secondary container ">Submit</button>
+              </div>
+              <input name="send-to" value="tordonez@brooklynsteamcenter.org" hidden>
+          
+                 </form>
+             
+            
         </div>
     </div>
 
