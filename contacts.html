@@ -22,6 +22,31 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+      <img src="images/logos/blue_logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+      Patent Works
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>            
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>            
+        </ul>
+      </div>
+  </nav>
     <div class="p-5 container wow animate__slideInDown ">
         <div class="bg-primary position-relative m border border-1 border-primary rounded">
 
@@ -48,13 +73,17 @@
               </div>
 
               <div class="mb-3 pb-5  m-5 wow animate__fadeIn">
-                <label for="message" class="form-label">Message:</label>
-                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                <label for="bigmessage" class="form-label">Message:</label><br>
+                <textarea class="input" id="bigmessage" name="message" rows="3"></textarea>
               </div>
+
+      
               <div class="d-grid gap-2 col-6 mx-auto  pb-5 ">
                 <button type="submit" class="btn btn-outline-secondary container ">Submit</button>
               </div>
               <input name="send-to" value="tordonez@brooklynsteamcenter.org" hidden>
+
+              
           
                  </form>
              
