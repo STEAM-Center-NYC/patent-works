@@ -45,6 +45,10 @@
 }
 
 
+label{
+  font-family: "Allerta Stencil", sans serif;
+}
+
 
 *,
 *::before,
@@ -57,7 +61,7 @@
     padding: 10px 13px;
     margin: 8px 0;
     box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     border-radius: 8px;
     border: none;
     border-bottom: 2px solid rgb(151, 173, 248);
@@ -85,6 +89,8 @@
     margin: 8px 0;
     box-sizing: border-box;
     font-family:'Courier New', Courier, monospace;
+    font-size: inherit;
+    line-height: inherit;
     border-radius: 8px;
     border: none;
     border-bottom: 2px solid rgb(151, 173, 248);
@@ -123,9 +129,7 @@
     background-color: #c6d9f5;
   }
   
-  form {
-    font-family: Abril Fatface;
-  }
+  
 
 
 
@@ -335,8 +339,7 @@ button:focus {
 input,
 button,
 select,
-optgroup,
-textarea {
+optgroup {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
