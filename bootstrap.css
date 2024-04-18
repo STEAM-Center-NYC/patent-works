@@ -30,6 +30,7 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
+
 .roboto-mono {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
@@ -44,11 +45,94 @@
 }
 
 
+label{
+  font-family: "Allerta Stencil", sans serif;
+}
+
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+  input[type=text] {
+    width: 90%;
+    padding: 10px 13px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 2px solid rgb(151, 173, 248);
+    background-color: #d9dcff;
+    transition: width 0.4s ease-in-out;
+    
+  } 
+
+  input[type=email] {
+    width: 90%;
+    padding: 10px 13px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 2px solid rgb(151, 173, 248);
+    background-color: #d9dcff;
+    transition: width 0.4s ease-in-out;
+  }
+
+  textarea {
+    width: 90%;
+    padding: 10px 13px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 2px solid rgb(151, 173, 248);
+    background-color: #d9dcff;
+    transition: width 0.4s ease-in-out;
+    
+  } 
+
+  textarea:focus {
+    background-color: #c6d9f5;
+    border: 3px solid rgb(131, 186, 241);
+    width: 100%;
+  }
+
+  textarea:hover{
+    background-color: #c6d9f5;
+  }
+  
+  input[type=text]:focus {
+    background-color: #c6d9f5;
+    border: 3px solid rgb(131, 186, 241);
+    width: 100%;
+  }
+  
+  input[type=email]:focus {
+    background-color:  #c6d9f5;
+    border: 3px solid rgb(131, 186, 241);
+    width: 100%;
+  }
+  
+  input[type=text]:hover{
+    background-color: #c6d9f5;
+  }
+
+  input[type=email]:hover{
+    background-color: #c6d9f5;
+  }
+  
+  
+
+
+
 
 html {
   font-family: sans-serif;
@@ -255,8 +339,7 @@ button:focus {
 input,
 button,
 select,
-optgroup,
-textarea {
+optgroup {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
