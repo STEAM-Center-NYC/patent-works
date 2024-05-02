@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+        var wow = new WOW({
+            boxClass:     'wow',
+            animateClass: 'animate__animated'
+        })
+        wow.init();
+</script>
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+      <img src="images/logos/blue_logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+      Patent Works
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>            
+          <li class="nav-item">
+            <a class="nav-link active" href="contacts.html">Contact us</a>
+          </li>            
+        </ul>
+      </div>
+  </nav>
+    <div class="p-5 container wow animate__slideInDown ">
+        <div class="bg-primary position-relative m border border-1 border-primary rounded">
+
+            <h1 class="p-3 wow animate__bounceInLeft">Contact Us</h1>
+
+            <form
+            action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+            method="post" 
+           >   
+
+            <div class="m-5 wow wow animate__fadeIn">
+                <label for="emailF" class="form-label">From:</label>
+                <input type="email" class="form-control" id="emailF" name="emailF" placeholder="name@example.com">
+              </div>
+
+              <div class="m-5 wow animate__fadeIn">
+                <label for="emailT" class="form-label">To:</label>
+                <input type="email" class="form-control" id="emailT" name="emailT" placeholder="name@example.com">
+              </div>
+
+              <div class="m-5 wow animate__fadeIn">
+                <label for="subject" class="form-label">Subject:</label>
+                <input type="text" class="form-control" id="Subject" name="subject" placeholder="Topic">
+              </div>
+
+              <div class="mb-3 pb-5  m-5 wow animate__fadeIn">
+                <label for="bigmessage" class="form-label">Message:</label><br>
+                <textarea class="input" id="bigmessage" name="message" rows="3" placeholder="Message"></textarea>
+              </div>
+
+      
+              <div class="d-grid gap-2 col-6 mx-auto  pb-5 ">
+                <button type="submit" class="btn btn-outline-secondary container ">Submit</button>
+              </div>
+              <input name="send-to" value="tordonez@brooklynsteamcenter.org" hidden>
+
+              
+          
+                 </form>
+             
+            
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

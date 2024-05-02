@@ -30,6 +30,7 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
+
 .roboto-mono {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
@@ -50,12 +51,14 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 
 article,
 aside,
@@ -72,7 +75,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Allerta Stencil";
+
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -99,6 +102,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+
 }
 
 p {
@@ -255,8 +259,7 @@ button:focus {
 input,
 button,
 select,
-optgroup,
-textarea {
+optgroup {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -2757,34 +2760,7 @@ fieldset:disabled a.btn {
   border-color: #596cc3;
 }
 .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #596cc3;
-  border-color: #596cc3;
-}
-.btn-outline-primary:focus,
-.btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(89, 108, 195, 0.5);
-}
-.btn-outline-primary.disabled,
-.btn-outline-primary:disabled {
-  color: #596cc3;
-  background-color: transparent;
-}
-.btn-outline-primary:not(:disabled):not(.disabled):active,
-.btn-outline-primary:not(:disabled):not(.disabled).active,
-.show > .btn-outline-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #596cc3;
-  border-color: #596cc3;
-}
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
-.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(89, 108, 195, 0.5);
-}
 
-.btn-outline-secondary {
-  color: #fff;
   border-color: #fff;
 }
 .btn-outline-secondary:hover {
