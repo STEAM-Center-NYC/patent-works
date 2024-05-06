@@ -9692,3 +9692,7 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+.title {
+  font-size: 80px;
+}
