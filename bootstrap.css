@@ -25,11 +25,12 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
-
 
 .roboto-mono {
   font-family: "Roboto Mono", monospace;
@@ -44,11 +45,9 @@
   font-style: normal;
 }
 
-
-label{
+label {
   font-family: "Allerta Stencil", sans serif;
 }
-
 
 *,
 *::before,
@@ -56,83 +55,76 @@ label{
   box-sizing: border-box;
 }
 
-  input[type=text] {
-    width: 90%;
-    padding: 10px 13px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 8px;
-    border: none;
-    border-bottom: 2px solid rgb(151, 173, 248);
-    background-color: #d9dcff;
-    transition: width 0.4s ease-in-out;
-    
-  } 
+input[type="text"] {
+  width: 90%;
+  padding: 10px 13px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 2px solid rgb(151, 173, 248);
+  background-color: #d9dcff;
+  transition: width 0.4s ease-in-out;
+}
 
-  input[type=email] {
-    width: 90%;
-    padding: 10px 13px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace;
-    border-radius: 8px;
-    border: none;
-    border-bottom: 2px solid rgb(151, 173, 248);
-    background-color: #d9dcff;
-    transition: width 0.4s ease-in-out;
-  }
+input[type="email"] {
+  width: 90%;
+  padding: 10px 13px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 2px solid rgb(151, 173, 248);
+  background-color: #d9dcff;
+  transition: width 0.4s ease-in-out;
+}
 
-  textarea {
-    width: 90%;
-    padding: 10px 13px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace;
-    font-size: inherit;
-    line-height: inherit;
-    border-radius: 8px;
-    border: none;
-    border-bottom: 2px solid rgb(151, 173, 248);
-    background-color: #d9dcff;
-    transition: width 0.4s ease-in-out;
-    
-  } 
+textarea {
+  width: 90%;
+  padding: 10px 13px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 2px solid rgb(151, 173, 248);
+  background-color: #d9dcff;
+  transition: width 0.4s ease-in-out;
+}
 
-  textarea:focus {
-    background-color: #c6d9f5;
-    border: 3px solid rgb(131, 186, 241);
-    width: 100%;
-  }
+textarea:focus {
+  background-color: #c6d9f5;
+  border: 3px solid rgb(131, 186, 241);
+  width: 100%;
+}
 
-  textarea:hover{
-    background-color: #c6d9f5;
-  }
-  
-  input[type=text]:focus {
-    background-color: #c6d9f5;
-    border: 3px solid rgb(131, 186, 241);
-    width: 100%;
-  }
-  
-  input[type=email]:focus {
-    background-color:  #c6d9f5;
-    border: 3px solid rgb(131, 186, 241);
-    width: 100%;
-  }
-  
-  input[type=text]:hover{
-    background-color: #c6d9f5;
-  }
+textarea:hover {
+  background-color: #c6d9f5;
+}
 
-  input[type=email]:hover{
-    background-color: #c6d9f5;
-  }
-  
-  
+input[type="text"]:focus {
+  background-color: #c6d9f5;
+  border: 3px solid rgb(131, 186, 241);
+  width: 100%;
+}
 
+input[type="email"]:focus {
+  background-color: #c6d9f5;
+  border: 3px solid rgb(131, 186, 241);
+  width: 100%;
+}
 
+input[type="text"]:hover {
+  background-color: #c6d9f5;
+}
 
+input[type="email"]:hover {
+  background-color: #c6d9f5;
+}
 
 html {
   font-family: sans-serif;
@@ -140,8 +132,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
-
 
 article,
 aside,
@@ -9776,5 +9766,33 @@ a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
+  }
+}
+
+.center {
+  margin: 0px 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .center {
+    margin: 0px 160px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .center {
+    margin: 0px 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .center {
+    margin: 0px 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .center {
+    margin: 0px 40px;
   }
 }
