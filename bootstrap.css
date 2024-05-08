@@ -81,6 +81,20 @@ input[type="email"] {
   transition: width 0.4s ease-in-out;
 }
 
+input[type=password] {
+  width: 90%;
+  padding: 10px 13px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 2px solid rgb(151, 173, 248);
+  background-color: #d9dcff;
+  transition: width 0.4s ease-in-out;
+
+} 
+
 textarea {
   width: 90%;
   padding: 10px 13px;
@@ -118,11 +132,21 @@ input[type="email"]:focus {
   width: 100%;
 }
 
+input[type=password]:focus {
+  background-color:  #c6d9f5;
+  border: 3px solid rgb(131, 186, 241);
+  width: 100%;
+}
+
 input[type="text"]:hover {
   background-color: #c6d9f5;
 }
 
 input[type="email"]:hover {
+  background-color: #c6d9f5;
+}
+
+input[type=password]:hover{
   background-color: #c6d9f5;
 }
 
