@@ -9793,31 +9793,3 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-
-.center {
-  margin: 0px 200px;
-}
-
-@media screen and (max-width: 1200px) {
-  .center {
-    margin: 0px 160px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .center {
-    margin: 0px 120px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .center {
-    margin: 0px 80px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .center {
-    margin: 0px 40px;
-  }
-}
