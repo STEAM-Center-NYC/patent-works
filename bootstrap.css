@@ -32,6 +32,7 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
+
 .roboto-mono {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
@@ -81,7 +82,7 @@ input[type="email"] {
   transition: width 0.4s ease-in-out;
 }
 
-input[type=password] {
+input[type="password"] {
   width: 90%;
   padding: 10px 13px;
   margin: 8px 0;
@@ -132,7 +133,7 @@ input[type="email"]:focus {
   width: 100%;
 }
 
-input[type=password]:focus {
+input[type="password"]:focus {
   background-color:  #c6d9f5;
   border: 3px solid rgb(131, 186, 241);
   width: 100%;
@@ -146,7 +147,7 @@ input[type="email"]:hover {
   background-color: #c6d9f5;
 }
 
-input[type=password]:hover{
+input[type="password"]:hover{
   background-color: #c6d9f5;
 }
 
